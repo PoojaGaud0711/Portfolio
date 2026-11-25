@@ -12,7 +12,7 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--out:#070f0d;--bg:#0c1a17;--surface:#14282a;--ink:#e6f1ed;--muted:#93aaa3;--line:#24403a;--teal:#5fcfb0;--brass:#e0b75f;--navy:#12302a;--on-navy:#e6f1ed;color-scheme:dark}}
 :root[data-theme="dark"]{--out:#070f0d;--bg:#0c1a17;--surface:#14282a;--ink:#e6f1ed;--muted:#93aaa3;--line:#24403a;--teal:#5fcfb0;--brass:#e0b75f;--navy:#12302a;--on-navy:#e6f1ed;color-scheme:dark}
 *,*::before,*::after{box-sizing:border-box}
-html,body{height:100%;margin:0}
+html,body{height:100%;margin:0}body{height:100vh;height:100dvh}
 body{background:var(--out);color:var(--ink);font:400 17px/1.65 "Hanken Grotesk",system-ui,sans-serif;padding:14px;padding-top:calc(14px + env(safe-area-inset-top,0px));padding-bottom:calc(14px + env(safe-area-inset-bottom,0px));overflow:hidden}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
@@ -72,7 +72,7 @@ h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:8px}
 .close{background:var(--navy);color:var(--on-navy);border-radius:20px;padding:36px;margin-top:30px}
 .close h2{font-size:clamp(26px,4vw,40px)}.close p{opacity:.85;margin:0 0 20px}
 .close .btn.alt{color:var(--on-navy);border-color:rgba(255,255,255,.5)}
-@media (max-width:800px){body{padding:8px}.frame{border-radius:20px}.bar{padding:10px 14px;flex-direction:column;align-items:flex-start;gap:6px}.pane{padding:26px 20px}.track{grid-template-columns:repeat(2,1fr);gap:20px 12px}.rail,.packet{display:none}.panel{grid-template-columns:1fr}.stat{text-align:left}.dep{grid-template-columns:1fr;gap:6px}.how,.skl{grid-template-columns:1fr}.skl div,.edu div{grid-template-columns:1fr;gap:2px}.foot{padding:10px 14px}.close{padding:26px}.trace{padding:22px}}
+@media (max-width:800px){body{padding:8px}.frame{border-radius:20px}.bar{padding:10px 14px;flex-direction:column;align-items:flex-start;gap:6px}.pane{padding:26px 20px 44px}.track{grid-template-columns:repeat(2,1fr);gap:20px 12px}.rail,.packet{display:none}.panel{grid-template-columns:1fr}.stat{text-align:left}.dep{grid-template-columns:1fr;gap:6px}.how,.skl{grid-template-columns:1fr}.skl div,.edu div{grid-template-columns:1fr;gap:2px}.foot{padding:10px 14px}.close{padding:26px}.trace{padding:22px}.in{justify-content:flex-start}.btn{overflow-wrap:anywhere;text-align:center;padding:13px 16px}.close .btns{flex-direction:column}.close .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){.stage{scroll-behavior:auto}.packet,.prog i{transition:none}}
 </style>
 </head>
